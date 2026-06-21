@@ -629,18 +629,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    gsap.from('.footer-middle > *, .btn-demo, .white-text', {
-        opacity: 0,
-        y: 20,
-        duration: 0.8,
-        stagger: 0.1, // Sped up stagger from 0.2
-        ease: 'expo.out',
-        scrollTrigger: {
-            trigger: ".site-footer",
-            start: "top 95%",
-            toggleActions: 'play none none reverse'
+    gsap.fromTo('.footer-middle > *, .btn-demo, .white-text', 
+        {
+            opacity: 0,
+            y: 20
+        },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: 'expo.out',
+            scrollTrigger: {
+                trigger: ".site-footer",
+                start: "top 95%",
+                toggleActions: 'play none none reverse'
+            }
         }
-    });
+    );
 
     /* ─────────────────────────────────────────
        DRESSING GALLERY — Filter & Lightbox

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAADOUR</title>
+    <link rel="icon" type="image/png" href="imges/ChatGPT Image Jun 15, 2026, 01_57_01 AM 1.png">
+    <meta name="description"
+        content="Get in touch with Daadour to create something exceptional together. We'd love to hear from you.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="imges/ChatGPT Image Jun 15, 2026, 01_57_01 AM 1.png" alt="Daadour Logo">
+            </a>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="bESPOKE-kITCHENS.html">Kitchens</a></li>
+                <li><a href="dressing-rooms.html">Dressing Rooms</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-toggle" id="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero" id="contact-hero">
+            <div class="container hero-container">
+                <div class="contact-hero-content">
+                    <h1 class="reveal-text">Let's Create Something<br>Exceptional Together</h1>
+                    <p class="reveal-text-slow">We'd Love to Hear From You</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section" id="contact-form">
+            <div class="container form-container">
+                <form action="#" method="POST" id="daadour-contact-form" class="contact-form">
+                    <div class="form-row form-anim">
+                        <div class="form-group">
+                            <label for="f-name">F - Name</label>
+                            <input type="text" id="f-name" name="f_name" placeholder="F - Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="l-name">L - Name</label>
+                            <input type="text" id="l-name" name="l_name" placeholder="L - Name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group form-anim">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-group form-anim">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-group form-anim">
+                        <label for="service">Service Type</label>
+                        <div class="select-wrapper">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected hidden>Service Type</option>
+                                <option value="bespoke-kitchens">BESPOKE KITCHENS</option>
+                                <option value="dressing-room">Dressing Room</option>
+                            </select>
+                            <span class="custom-arrow">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#DADADA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-anim">
+                        <label for="details">Request Detail</label>
+                        <textarea id="details" name="details" rows="6" placeholder="Request Detail" required></textarea>
+                    </div>
+
+                    <div class="form-anim">
+                        <button type="submit" class="btn-submit-project">Start Your Project Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-heading">
+                    <span class="typewriter-text"
+                        data-text="Discover how DAADOUR transforms kitchens and dressing"></span>
+                    <span class="white-text"> rooms into timeless spaces designed for modern living.</span>
+                </h2>
+                <a href="#" class="btn-demo">
+                    Book A Demo
+                    <span class="btn-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div class="footer-middle">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="imges/ChatGPT Image Jun 15, 2026, 01_57_01 AM 1.png" alt="Daadour Logo">
+                    </a>
+                </div>
+
+                <div class="footer-nav-block">
+                    <div class="footer-social">
+                        <a href="#" aria-label="YouTube"><img src="imges/Group (30).png" alt="YouTube"></a>
+                        <a href="#" aria-label="WhatsApp"><img src="imges/Group (29).png" alt="WhatsApp"></a>
+                        <a href="#" aria-label="TikTok"><img src="imges/Group (28).png" alt="TikTok"></a>
+                        <a href="#" aria-label="Facebook"><img src="imges/Group (27).png" alt="Facebook"></a>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about-us.html">About Us</a>
+                        <a href="bESPOKE-kITCHENS.html">Kitchens</a>
+                        <a href="dressing-rooms.html">Dressing Rooms</a>
+                        <a href="contact-us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Ezdhar Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/1234567890" class="floating-wa" target="_blank" aria-label="Contact us on WhatsApp">
+        <img src="imges/logos_whatsapp-icon.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from(".contact-hero-content h1", {
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                ease: "power4.out",
+                delay: 0.2
+            });
+            gsap.from(".contact-hero-content p", {
+                y: 30,
+                opacity: 0,
+                duration: 1,
+                ease: "power4.out",
+                delay: 0.5
+            });
+            
+            // Add subtle parallax to background
+            gsap.to(".contact-hero", {
+                backgroundPosition: "50% 100%",
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".contact-hero",
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+
+            // Form entrance animation
+            gsap.from(".form-anim", {
+                y: 40,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.15,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: ".contact-form-section",
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+
+            // Form submission placeholder
+            const contactForm = document.getElementById('daadour-contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    // Connect email sending logic here later
+                    alert('Message Sent successfully! We will connect with you soon.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
