@@ -120,6 +120,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ─────────────────────────────────────────
+       KITCHENS HERO — Entrance & Parallax
+    ───────────────────────────────────────── */
+    if (document.querySelector('.kitchens-hero-content')) {
+        gsap.from('.kitchens-hero-content > *', {
+            opacity: 0,
+            y: 60,
+            duration: 1.5,
+            stagger: 0.3,
+            ease: 'expo.out',
+            delay: 0.6,
+        });
+
+        gsap.to('.kitchens-hero', {
+            backgroundPositionY: '35%',
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.kitchens-hero',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true,
+            },
+        });
+    }
+
+    /* ─────────────────────────────────────────
        ABOUT LEGACY — Typewriter & Entrance
 
     ───────────────────────────────────────── */
