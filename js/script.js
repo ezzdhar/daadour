@@ -46,6 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ─────────────────────────────────────────
+       Smooth Scroll for #bespoke anchor links
+       (overrides browser default to avoid
+        GSAP ScrollTrigger conflicts)
+    ───────────────────────────────────────── */
+    document.querySelectorAll('a[href="#bespoke"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const target = document.querySelector('#bespoke');
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    /* ─────────────────────────────────────────
        Hero Content: staggered reveal on load
     ───────────────────────────────────────── */
     gsap.from('.hero-content > *', {
